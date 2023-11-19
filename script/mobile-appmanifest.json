@@ -1,0 +1,10 @@
+{
+    "name": "SRK",
+    "short_name": "SRK",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "../",
+    "start_url": "../home/"
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <script src="script/js.cookie.min.js"></script>
+        <script src="script/detect.min.js"></script>
+        <link rel="stylesheet" href="script/splash-style.css">
+        <link rel="icon" type="image/png" href="resources/">
+        <link rel="shortcut icon" type="image/png" href="resources/">
+        <link rel="apple-touch-icon" href="resources/">
+        <link rel="manifest" href="script/mobile-appmanifest.json">
+        <meta name="theme-color" content="#">
+    </head>
+    <body style="">
+     
+    </body>
+
+    <script type="text/javascript">
+        var ua = detect.parse(navigator.userAgent);
+        setTimeout(function(){
+            if(ua.device.type == "Mobile") {
+                location.replace("m/")
+            } else {
+                location.replace("d/")
+            }
+        }, 2500);
+    </script>
+</html>
