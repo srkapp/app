@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SRK - ดอกเบี้ยเงินสินเชื่อ</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
+        <script src="../../script/js.cookie.min.js"></script>
+        <script src="../../mobile-main-script.js"></script>
+        <link rel="stylesheet" href="../../script/mobile-main-style.css">
+        <link rel="icon" type="image/png" href="../../resources/app-logo.png">
+        <link rel="shortcut icon" type="image/png" href="../../resources/app-logo.png">
+        <link rel="apple-touch-icon" href="../../resources/app-logo.png">
+        <link rel="manifest" href="../../script/mobile-appmanifest.json">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <meta name="theme-color" content="#3cb365">
+    </head>
+    <body style="background-color: #3cb365;" onload="onload()">
+        <header>
+            ดอกเบี้ยเงินสินเชื่อ
+            <div class="header-button" onclick="history.back()"><span class="header-icon material-symbols-outlined">arrow_back_ios</span></div>
+        </header>
+        <img class="calculate-wallpaper" src="../../resources/loan-wallpaper-banner.png">
+        <img class=" calculate-banner-icon" src="../../resources/loan-icon-banner.png">
+       
+        <form class="calculate-form">
+            <div class="calculate-description">ดอกเบี้ยที่คุณต้องจ่ายจากการกู้เงินกับธนาคาร โดยเป็นสินเชื่อส่วนบุคคลแบบดอกเบี้ยคงที่</div>
+            <input class="calculate-text-input " id="loanFORM_CUSTOMRATE" oninput="loanFORM_VALIDATEFORM()" type="number" inputmode="decimal" placeholder="กำหนดอัตราดอกเบี้ย (เปอร์เซ็น เช่น 25)">
+            <input class="calculate-text-input" id="loanFORM_AMOUT" oninput="loanFORM_VALIDATEFORM()" type="number" inputmode="numeric" placeholder="จำนวนเงินต้น">
+            <input class="calculate-text-input" id="loanFORM_YEARAMOUT" oninput="loanFORM_VALIDATEFORM()" type="number" inputmode="numeric" placeholder="จำนวนปีที่ผ่อนชำระ">
+            <input class="calculate-text-input" id="loanFORM_PERIODAMOUT" oninput="loanFORM_VALIDATEFORM()" type="number" inputmode="numeric" placeholder="จำนวนงวดที่ผ่อนชำระ">
+            <div class="calculate-primary-button hide" id="loanFORM_SUBMIT" onclick="loanFORM_SUBMITFORM()">คำนวณ</div>
+            <div class="calculate-ignore-button" id="loanFORM_IGNORE" style="color: #0c3017; background-color: #2d8b4d; border-color: #0c3017;">กรุณากรอกข้อมูลให้ครบถ้วน</div>
+        </form>
+    </body>
+</html>
